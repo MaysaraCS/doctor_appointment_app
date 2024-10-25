@@ -41,6 +41,7 @@ dependencies:
   rating_dialog: ^2.0.4
   shared_preferences: ^2.3.2
   provider: ^6.1.2
+  dio: ^5.7.0
 
 dev_dependencies:
   flutter_test:
