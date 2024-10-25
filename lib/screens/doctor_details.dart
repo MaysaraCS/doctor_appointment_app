@@ -31,8 +31,6 @@ class _DoctorDetailsState extends State<DoctorDetails> {
 
   @override
   Widget build(BuildContext context) {
-    // get arguments passed from doctor card
-    final doctor = ModalRoute.of(context)!.settings.arguments as Map;
     return Scaffold(
       appBar: CustomAppBar(
         appTitle: 'Doctor Details',

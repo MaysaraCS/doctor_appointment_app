@@ -1,12 +1,3 @@
-// // in order to connect to database
-// //we have to create dio provider first
-// //to post/get data from Laravel database
-// //and since we use Laravel Sanctum
-// //an API Token needed for getting data
-// //and thus, JWT used in this video
-// //now, let's build dio provider and get token from database
-
-
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
@@ -20,8 +11,6 @@ class DioProvider {
           data: {'email': email, 'password': password});
 
       if (response.statusCode == 200 && response.data != '') {
-        // store returned token into share pref
-        // for get other data later
         final SharedPreferences prefs = await SharedPreferences.getInstance();
         await prefs.setString('token', response.data);
         return true;
